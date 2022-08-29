@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.mobile-container{
+    width: 400px;
+    background-color: #fff;
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header input, button:hover{
+    cursor: pointer;
+}
+
+header input{
+    border-radius: 3px;
+    border: none;
+    background-color: #eee;
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+}
+
+header button{
+    background-color: transparent;
+    font-size: 1.5rem;
+    border: none;
+    color: #aaa;
+    margin-left: 10px;
+}
+
+header button:hover{
+    font-size: 1.5rem;
+    border: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.favorite-container{
+    background-color: #a8b8fdb0;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0 2px #3333331a;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.favorite-meals{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.favorite-meals li{
+    margin-top: 5px;
+    width: 85px;
+    position: relative;
+    cursor: pointer;
+} 
+
+.favorite-meals li .clear{
+    background-color: transparent;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    border: none;
+    font-size: 1.2rem;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.favorite-meals li .clear:hover{
+    opacity: 1;
+}
+
+.favorite-meals li img{
+    border: 2px solid rgba(255, 255, 255, 0.877);
+    box-shadow: 0 0 3px #000000a9;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.favorite-meals li span{
+    display: inline-block;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 75px;
+}
+
+.favorite-meals li span:hover{
+    white-space: unset;
+    overflow: visible;
+}
+
+.meal{
+    margin: 1.5rem;
+    border-radius: 3px;
+    box-shadow: 0 0 10px 2px #3333331a;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.meal-header{
+    position: relative;
+}
+
+.meal-header .random{
+    position: absolute;
+    top: 1rem;
+    background-color: white;
+    padding: 0.25rem 0.5rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.meal-header img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.meal-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.meal-body h4{
+    margin: 0;
+}
+
+.meal-body .fav-btn{
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.meal-body .fav-btn.active{
+    color: rebeccapurple;
+}
+
+.popup-container{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.popup-container.hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.popup{
+    max-height: 100vh;
+    background-color: white;
+    max-width: 600px;
+    width: 100%;
+    padding: 0 2rem;
+    border-radius: 5px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.popup #close-popup{
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+}
+

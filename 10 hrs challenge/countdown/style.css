@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #021D40;
+    margin: 0;
+    background: url(mountains.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.countdown-months, .countdown-days, .countdown-hours, .countdown-minutes, .countdown-seconds{
+    display: inline-block;
+    margin: 10px 25px;
+}
+span{
+    display: block;
+    font-size: 3em;
+}
